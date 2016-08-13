@@ -17,9 +17,12 @@
 //系统库
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
+#import <AVFoundation/AVFoundation.h>
+#import <MediaPlayer/MediaPlayer.h>
 
 //第三方库
 #import <Masonry/Masonry.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
 #import "LazyPDFKit/LazyPDFKit.h"
 
 

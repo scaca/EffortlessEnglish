@@ -126,7 +126,7 @@
 #pragma mark - 图片相关
 
 //获取UIImage
-#define kImage(name) [UIImage ora_imageNamed:name]
+#define kImage(name) [UIImage imageNamed:name]
 
 //获取应用目录下的PNG图片
 #define kImageWithName_PNG(name) \

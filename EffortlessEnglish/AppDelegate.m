@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "CustomTabBarController.h"
 #import "MusicsViewController.h"
 
 @interface AppDelegate ()
@@ -19,11 +20,20 @@
     MusicsViewController *musicsViewController = [[MusicsViewController alloc] init];
     UINavigationController *navigationController =
         [[UINavigationController alloc] initWithRootViewController:musicsViewController];
+
+    CustomTabBarController *tabBarController = [[CustomTabBarController alloc] init];
+    [tabBarController addChildViewController:navigationController];
+
     UIWindow *window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    window.rootViewController = navigationController;
+    window.rootViewController = tabBarController;
     window.backgroundColor = [UIColor whiteColor];
     [window makeKeyAndVisible];
     self.window = window;
+
+    //后台播放
+    AVAudioSession *session = [AVAudioSession sharedInstance];
+    [session setActive:YES error:nil];
+    [session setCategory:AVAudioSessionCategoryPlayback error:nil];
     return YES;
 }
 

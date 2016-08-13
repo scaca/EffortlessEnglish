@@ -100,8 +100,7 @@
 		0609EE011D5C3E8F00D3C671 /* undo-but@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0609EDA91D5C3E8F00D3C671 /* undo-but@2x.png */; };
 		0609EE021D5C3E8F00D3C671 /* VERSION in Resources */ = {isa = PBXBuildFile; fileRef = 0609EDAA1D5C3E8F00D3C671 /* VERSION */; };
 		0609EE2A1D5DA84100D3C671 /* MusicsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0609EE291D5DA84100D3C671 /* MusicsViewController.m */; };
-		0609EE311D5DB43F00D3C671 /* MusicPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0609EE301D5DB43F00D3C671 /* MusicPlayerViewController.m */; };
-		0609EE341D5DB4A200D3C671 /* MusicPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0609EE331D5DB4A200D3C671 /* MusicPlayerView.m */; };
+		0609EE311D5DB43F00D3C671 /* PDFShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0609EE301D5DB43F00D3C671 /* PDFShowViewController.m */; };
 		06A721FC1D5DC17E001591C6 /* PDFShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A721FB1D5DC17E001591C6 /* PDFShowView.m */; };
 		06A722291D5DD2C8001591C6 /* Day of the Dead Audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 06A722001D5DD2C8001591C6 /* Day of the Dead Audio.mp3 */; };
 		06A7222A1D5DD2C8001591C6 /* Day of the Dead MS.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 06A722011D5DD2C8001591C6 /* Day of the Dead MS.mp3 */; };
@@ -138,7 +137,21 @@
 		06A722491D5DD2C8001591C6 /* Secret Love MS-B.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 06A722261D5DD2C8001591C6 /* Secret Love MS-B.mp3 */; };
 		06A7224A1D5DD2C8001591C6 /* Secret Love Vocab.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 06A722271D5DD2C8001591C6 /* Secret Love Vocab.mp3 */; };
 		06A7224B1D5DD2C8001591C6 /* Secret Love.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 06A722281D5DD2C8001591C6 /* Secret Love.pdf */; };
-		3854920604901EB4DA3177C5 /* libPods-EffortlessEnglish.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A668B35A134A7137B1DA3CA /* libPods-EffortlessEnglish.a */; };
+		06A7224E1D5E0B75001591C6 /* CustomTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A7224D1D5E0B75001591C6 /* CustomTabBarController.m */; };
+		06A7225C1D5E0C94001591C6 /* MusicPlayer_上一个@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06A722501D5E0C94001591C6 /* MusicPlayer_上一个@2x.png */; };
+		06A7225D1D5E0C94001591C6 /* MusicPlayer_下一个@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06A722511D5E0C94001591C6 /* MusicPlayer_下一个@2x.png */; };
+		06A7225E1D5E0C94001591C6 /* MusicPlayer_下载@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06A722521D5E0C94001591C6 /* MusicPlayer_下载@2x.png */; };
+		06A7225F1D5E0C94001591C6 /* MusicPlayer_单曲循环@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06A722531D5E0C94001591C6 /* MusicPlayer_单曲循环@2x.png */; };
+		06A722601D5E0C94001591C6 /* MusicPlayer_后退@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06A722541D5E0C94001591C6 /* MusicPlayer_后退@2x.png */; };
+		06A722611D5E0C94001591C6 /* MusicPlayer_播放@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06A722551D5E0C94001591C6 /* MusicPlayer_播放@2x.png */; };
+		06A722621D5E0C94001591C6 /* MusicPlayer_暂停@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06A722561D5E0C94001591C6 /* MusicPlayer_暂停@2x.png */; };
+		06A722631D5E0C94001591C6 /* MusicPlayer_随机播放@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06A722571D5E0C94001591C6 /* MusicPlayer_随机播放@2x.png */; };
+		06A722641D5E0C94001591C6 /* MusicPlayer_顺序播放@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06A722581D5E0C94001591C6 /* MusicPlayer_顺序播放@2x.png */; };
+		06A722651D5E0C94001591C6 /* Slider_控制点@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06A722591D5E0C94001591C6 /* Slider_控制点@2x.png */; };
+		06A722661D5E0C94001591C6 /* 音乐_播放器_默认唱片头像@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06A7225A1D5E0C94001591C6 /* 音乐_播放器_默认唱片头像@2x.png */; };
+		06A722671D5E0C94001591C6 /* 音乐_播放器_默认模糊背景@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06A7225B1D5E0C94001591C6 /* 音乐_播放器_默认模糊背景@2x.png */; };
+		06A7226A1D5F0E45001591C6 /* PlayerTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A722691D5F0E45001591C6 /* PlayerTabBar.m */; };
+		64EA937D34C908DAA3D5D46A /* Pods_EffortlessEnglish.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E3D7F992E1062AD8106037 /* Pods_EffortlessEnglish.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -279,10 +292,8 @@
 		0609EDAA1D5C3E8F00D3C671 /* VERSION */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = VERSION; sourceTree = "<group>"; };
 		0609EE281D5DA84100D3C671 /* MusicsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicsViewController.h; sourceTree = "<group>"; };
 		0609EE291D5DA84100D3C671 /* MusicsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicsViewController.m; sourceTree = "<group>"; };
-		0609EE2F1D5DB43F00D3C671 /* MusicPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicPlayerViewController.h; sourceTree = "<group>"; };
-		0609EE301D5DB43F00D3C671 /* MusicPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicPlayerViewController.m; sourceTree = "<group>"; };
-		0609EE321D5DB4A200D3C671 /* MusicPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicPlayerView.h; sourceTree = "<group>"; };
-		0609EE331D5DB4A200D3C671 /* MusicPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicPlayerView.m; sourceTree = "<group>"; };
+		0609EE2F1D5DB43F00D3C671 /* PDFShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFShowViewController.h; sourceTree = "<group>"; };
+		0609EE301D5DB43F00D3C671 /* PDFShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFShowViewController.m; sourceTree = "<group>"; };
 		06A721F91D5DBE5E001591C6 /* EffortlessEnglish.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EffortlessEnglish.pch; sourceTree = "<group>"; };
 		06A721FA1D5DC17E001591C6 /* PDFShowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFShowView.h; sourceTree = "<group>"; };
 		06A721FB1D5DC17E001591C6 /* PDFShowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFShowView.m; sourceTree = "<group>"; };
@@ -323,7 +334,23 @@
 		06A722261D5DD2C8001591C6 /* Secret Love MS-B.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Secret Love MS-B.mp3"; sourceTree = "<group>"; };
 		06A722271D5DD2C8001591C6 /* Secret Love Vocab.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Secret Love Vocab.mp3"; sourceTree = "<group>"; };
 		06A722281D5DD2C8001591C6 /* Secret Love.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Secret Love.pdf"; sourceTree = "<group>"; };
-		5A668B35A134A7137B1DA3CA /* libPods-EffortlessEnglish.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EffortlessEnglish.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		06A7224C1D5E0B75001591C6 /* CustomTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBarController.h; sourceTree = "<group>"; };
+		06A7224D1D5E0B75001591C6 /* CustomTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBarController.m; sourceTree = "<group>"; };
+		06A722501D5E0C94001591C6 /* MusicPlayer_上一个@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MusicPlayer_上一个@2x.png"; sourceTree = "<group>"; };
+		06A722511D5E0C94001591C6 /* MusicPlayer_下一个@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MusicPlayer_下一个@2x.png"; sourceTree = "<group>"; };
+		06A722521D5E0C94001591C6 /* MusicPlayer_下载@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MusicPlayer_下载@2x.png"; sourceTree = "<group>"; };
+		06A722531D5E0C94001591C6 /* MusicPlayer_单曲循环@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MusicPlayer_单曲循环@2x.png"; sourceTree = "<group>"; };
+		06A722541D5E0C94001591C6 /* MusicPlayer_后退@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MusicPlayer_后退@2x.png"; sourceTree = "<group>"; };
+		06A722551D5E0C94001591C6 /* MusicPlayer_播放@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MusicPlayer_播放@2x.png"; sourceTree = "<group>"; };
+		06A722561D5E0C94001591C6 /* MusicPlayer_暂停@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MusicPlayer_暂停@2x.png"; sourceTree = "<group>"; };
+		06A722571D5E0C94001591C6 /* MusicPlayer_随机播放@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MusicPlayer_随机播放@2x.png"; sourceTree = "<group>"; };
+		06A722581D5E0C94001591C6 /* MusicPlayer_顺序播放@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MusicPlayer_顺序播放@2x.png"; sourceTree = "<group>"; };
+		06A722591D5E0C94001591C6 /* Slider_控制点@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Slider_控制点@2x.png"; sourceTree = "<group>"; };
+		06A7225A1D5E0C94001591C6 /* 音乐_播放器_默认唱片头像@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "音乐_播放器_默认唱片头像@2x.png"; sourceTree = "<group>"; };
+		06A7225B1D5E0C94001591C6 /* 音乐_播放器_默认模糊背景@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "音乐_播放器_默认模糊背景@2x.png"; sourceTree = "<group>"; };
+		06A722681D5F0E45001591C6 /* PlayerTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerTabBar.h; sourceTree = "<group>"; };
+		06A722691D5F0E45001591C6 /* PlayerTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerTabBar.m; sourceTree = "<group>"; };
+		55E3D7F992E1062AD8106037 /* Pods_EffortlessEnglish.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EffortlessEnglish.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4EB1C6DA19AD93A828945B0 /* Pods-EffortlessEnglish.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EffortlessEnglish.release.xcconfig"; path = "Pods/Target Support Files/Pods-EffortlessEnglish/Pods-EffortlessEnglish.release.xcconfig"; sourceTree = "<group>"; };
 		C0C4E12E991595325C3C61C2 /* Pods-EffortlessEnglish.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EffortlessEnglish.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EffortlessEnglish/Pods-EffortlessEnglish.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -333,7 +360,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3854920604901EB4DA3177C5 /* libPods-EffortlessEnglish.a in Frameworks */,
+				64EA937D34C908DAA3D5D46A /* Pods_EffortlessEnglish.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +388,7 @@
 		0609ED0E1D5C268300D3C671 /* EffortlessEnglish */ = {
 			isa = PBXGroup;
 			children = (
+				06A7224F1D5E0C94001591C6 /* Image */,
 				06A721FE1D5DC3E1001591C6 /* UtilsMacro.h */,
 				0609EE031D5D9C3700D3C671 /* resources */,
 				0609ED291D5C3E8F00D3C671 /* LazyPDFKit */,
@@ -370,12 +398,14 @@
 				0609ED0F1D5C268300D3C671 /* Supporting Files */,
 				0609EE281D5DA84100D3C671 /* MusicsViewController.h */,
 				0609EE291D5DA84100D3C671 /* MusicsViewController.m */,
-				0609EE2F1D5DB43F00D3C671 /* MusicPlayerViewController.h */,
-				0609EE301D5DB43F00D3C671 /* MusicPlayerViewController.m */,
-				0609EE321D5DB4A200D3C671 /* MusicPlayerView.h */,
-				0609EE331D5DB4A200D3C671 /* MusicPlayerView.m */,
+				0609EE2F1D5DB43F00D3C671 /* PDFShowViewController.h */,
+				0609EE301D5DB43F00D3C671 /* PDFShowViewController.m */,
 				06A721FA1D5DC17E001591C6 /* PDFShowView.h */,
 				06A721FB1D5DC17E001591C6 /* PDFShowView.m */,
+				06A7224C1D5E0B75001591C6 /* CustomTabBarController.h */,
+				06A7224D1D5E0B75001591C6 /* CustomTabBarController.m */,
+				06A722681D5F0E45001591C6 /* PlayerTabBar.h */,
+				06A722691D5F0E45001591C6 /* PlayerTabBar.m */,
 			);
 			path = EffortlessEnglish;
 			sourceTree = "<group>";
@@ -626,10 +656,29 @@
 			path = 1.7_secret_love;
 			sourceTree = "<group>";
 		};
+		06A7224F1D5E0C94001591C6 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				06A722501D5E0C94001591C6 /* MusicPlayer_上一个@2x.png */,
+				06A722511D5E0C94001591C6 /* MusicPlayer_下一个@2x.png */,
+				06A722521D5E0C94001591C6 /* MusicPlayer_下载@2x.png */,
+				06A722531D5E0C94001591C6 /* MusicPlayer_单曲循环@2x.png */,
+				06A722541D5E0C94001591C6 /* MusicPlayer_后退@2x.png */,
+				06A722551D5E0C94001591C6 /* MusicPlayer_播放@2x.png */,
+				06A722561D5E0C94001591C6 /* MusicPlayer_暂停@2x.png */,
+				06A722571D5E0C94001591C6 /* MusicPlayer_随机播放@2x.png */,
+				06A722581D5E0C94001591C6 /* MusicPlayer_顺序播放@2x.png */,
+				06A722591D5E0C94001591C6 /* Slider_控制点@2x.png */,
+				06A7225A1D5E0C94001591C6 /* 音乐_播放器_默认唱片头像@2x.png */,
+				06A7225B1D5E0C94001591C6 /* 音乐_播放器_默认模糊背景@2x.png */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
 		BDD64A89F211E7D89A4F8EF3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5A668B35A134A7137B1DA3CA /* libPods-EffortlessEnglish.a */,
+				55E3D7F992E1062AD8106037 /* Pods_EffortlessEnglish.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -704,6 +753,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				06A7222E1D5DD2C8001591C6 /* A Kiss MS-A.mp3 in Resources */,
+				06A7225E1D5E0C94001591C6 /* MusicPlayer_下载@2x.png in Resources */,
 				0609EDF01D5C3E8F00D3C671 /* pen-but@2x.png in Resources */,
 				06A722391D5DD2C8001591C6 /* Changed MS-A.mp3 in Resources */,
 				0609EE021D5C3E8F00D3C671 /* VERSION in Resources */,
@@ -715,20 +765,25 @@
 				0609EDF11D5C3E8F00D3C671 /* Pen-Button-Y.png in Resources */,
 				0609EDC71D5C3E8F00D3C671 /* LazyPDF-Mark-Y@2x.png in Resources */,
 				06A7222F1D5DD2C8001591C6 /* A Kiss MS-B.mp3 in Resources */,
+				06A7225C1D5E0C94001591C6 /* MusicPlayer_上一个@2x.png in Resources */,
 				0609EDFC1D5C3E8F00D3C671 /* text-but@2x.png in Resources */,
+				06A722651D5E0C94001591C6 /* Slider_控制点@2x.png in Resources */,
 				0609EDF41D5C3E8F00D3C671 /* Pen-Button@2x.png in Resources */,
 				0609EDEF1D5C3E8F00D3C671 /* pen-but.png in Resources */,
 				0609EDB61D5C3E8F00D3C671 /* done-but.png in Resources */,
 				06A7222A1D5DD2C8001591C6 /* Day of the Dead MS.mp3 in Resources */,
 				06A722301D5DD2C8001591C6 /* A Kiss Text.pdf in Resources */,
 				0609EDBC1D5C3E8F00D3C671 /* LazyPDF-Button-H.png in Resources */,
+				06A722641D5E0C94001591C6 /* MusicPlayer_顺序播放@2x.png in Resources */,
 				0609EDBE1D5C3E8F00D3C671 /* LazyPDF-Button-N.png in Resources */,
 				0609EDFB1D5C3E8F00D3C671 /* text-but.png in Resources */,
 				06A7223C1D5DD2C8001591C6 /* Changed.pdf in Resources */,
 				0609ED1F1D5C268300D3C671 /* LaunchScreen.storyboard in Resources */,
 				06A7223D1D5DD2C8001591C6 /* Drag Audio.mp3 in Resources */,
+				06A7225F1D5E0C94001591C6 /* MusicPlayer_单曲循环@2x.png in Resources */,
 				0609EDF91D5C3E8F00D3C671 /* squarefill-but.png in Resources */,
 				0609EDB31D5C3E8F00D3C671 /* Default-568h@2x.png in Resources */,
+				06A722621D5E0C94001591C6 /* MusicPlayer_暂停@2x.png in Resources */,
 				06A7223B1D5DD2C8001591C6 /* Changed Vocab.mp3 in Resources */,
 				0609EDC61D5C3E8F00D3C671 /* LazyPDF-Mark-Y.png in Resources */,
 				06A7222B1D5DD2C8001591C6 /* Day of the Dead Vocab.mp3 in Resources */,
@@ -747,6 +802,7 @@
 				0609EDF81D5C3E8F00D3C671 /* square-but@2x.png in Resources */,
 				06A722471D5DD2C8001591C6 /* Secret Love Audio.mp3 in Resources */,
 				06A7222C1D5DD2C8001591C6 /* Day of the Dead.pdf in Resources */,
+				06A722661D5E0C94001591C6 /* 音乐_播放器_默认唱片头像@2x.png in Resources */,
 				06A7224A1D5DD2C8001591C6 /* Secret Love Vocab.mp3 in Resources */,
 				06A722291D5DD2C8001591C6 /* Day of the Dead Audio.mp3 in Resources */,
 				06A722441D5DD2C8001591C6 /* Intimacy MS-B.mp3 in Resources */,
@@ -764,20 +820,25 @@
 				0609EDB41D5C3E8F00D3C671 /* Default-667h@2x.png in Resources */,
 				0609EDBD1D5C3E8F00D3C671 /* LazyPDF-Button-H@2x.png in Resources */,
 				0609EDEE1D5C3E8F00D3C671 /* line-but@2x.png in Resources */,
+				06A722631D5E0C94001591C6 /* MusicPlayer_随机播放@2x.png in Resources */,
 				06A722371D5DD2C8001591C6 /* Bubbas Food Text.pdf in Resources */,
 				0609EDF31D5C3E8F00D3C671 /* Pen-Button.png in Resources */,
 				0609EDC51D5C3E8F00D3C671 /* LazyPDF-Mark-N@2x.png in Resources */,
+				06A722671D5E0C94001591C6 /* 音乐_播放器_默认模糊背景@2x.png in Resources */,
 				06A7223A1D5DD2C8001591C6 /* Changed MS-B.mp3 in Resources */,
 				06A722361D5DD2C8001591C6 /* Bubba's Food Vocab.mp3 in Resources */,
 				06A722481D5DD2C8001591C6 /* Secret Love MS-A.mp3 in Resources */,
 				0609EDFA1D5C3E8F00D3C671 /* squarefill-but@2x.png in Resources */,
 				06A722421D5DD2C8001591C6 /* Intimacy Audio.mp3 in Resources */,
+				06A7225D1D5E0C94001591C6 /* MusicPlayer_下一个@2x.png in Resources */,
 				0609EDC91D5C3E8F00D3C671 /* LazyPDF-Print@2x.png in Resources */,
 				06A722351D5DD2C8001591C6 /* Bubba's Food MS-C.mp3 in Resources */,
 				0609EE011D5C3E8F00D3C671 /* undo-but@2x.png in Resources */,
 				0609EDC01D5C3E8F00D3C671 /* LazyPDF-Email.png in Resources */,
+				06A722601D5E0C94001591C6 /* MusicPlayer_后退@2x.png in Resources */,
 				0609EDD01D5C3E8F00D3C671 /* LazyPDFColorPickerView.xib in Resources */,
 				0609EDC31D5C3E8F00D3C671 /* LazyPDF-Export@2x.png in Resources */,
+				06A722611D5E0C94001591C6 /* MusicPlayer_播放@2x.png in Resources */,
 				0609EDF21D5C3E8F00D3C671 /* Pen-Button-Y@2x.png in Resources */,
 				06A722381D5DD2C8001591C6 /* Changed Audio.mp3 in Resources */,
 				0609EDF71D5C3E8F00D3C671 /* square-but.png in Resources */,
@@ -857,9 +918,9 @@
 				0609ED141D5C268300D3C671 /* AppDelegate.m in Sources */,
 				0609EDCF1D5C3E8F00D3C671 /* LazyPDFColorPickerNavigationController.m in Sources */,
 				0609EDE41D5C3E8F00D3C671 /* LazyPDFThumbCache.m in Sources */,
-				0609EE341D5DB4A200D3C671 /* MusicPlayerView.m in Sources */,
 				0609EDFF1D5C3E8F00D3C671 /* UIXToolbarView.m in Sources */,
 				0609EDE01D5C3E8F00D3C671 /* LazyPDFPopoverController.m in Sources */,
+				06A7226A1D5F0E45001591C6 /* PlayerTabBar.m in Sources */,
 				0609EDE31D5C3E8F00D3C671 /* LazyPDFSourceColorView.m in Sources */,
 				0609EDE21D5C3E8F00D3C671 /* LazyPDFPropertyController.m in Sources */,
 				0609EDD11D5C3E8F00D3C671 /* LazyPDFColorSquarePicker.m in Sources */,
@@ -871,6 +932,7 @@
 				0609EDFD1D5C3E8F00D3C671 /* ThumbsMainToolbar.m in Sources */,
 				0609EDDD1D5C3E8F00D3C671 /* LazyPDFMainPagebar.m in Sources */,
 				0609EDE81D5C3E8F00D3C671 /* LazyPDFThumbRequest.m in Sources */,
+				06A7224E1D5E0B75001591C6 /* CustomTabBarController.m in Sources */,
 				0609EDE61D5C3E8F00D3C671 /* LazyPDFThumbQueue.m in Sources */,
 				0609EDAB1D5C3E8F00D3C671 /* Annotation.m in Sources */,
 				0609EDD31D5C3E8F00D3C671 /* LazyPDFContentPage.m in Sources */,
@@ -884,7 +946,7 @@
 				0609EDD51D5C3E8F00D3C671 /* LazyPDFContentView.m in Sources */,
 				0609EDDA1D5C3E8F00D3C671 /* LazyPDFDrawingView.m in Sources */,
 				0609EDD61D5C3E8F00D3C671 /* LazyPDFDataManager.m in Sources */,
-				0609EE311D5DB43F00D3C671 /* MusicPlayerViewController.m in Sources */,
+				0609EE311D5DB43F00D3C671 /* PDFShowViewController.m in Sources */,
 				0609EDE71D5C3E8F00D3C671 /* LazyPDFThumbRender.m in Sources */,
 				06A721FC1D5DC17E001591C6 /* PDFShowView.m in Sources */,
 				0609EDDF1D5C3E8F00D3C671 /* LazyPDFModel.xcdatamodeld in Sources */,

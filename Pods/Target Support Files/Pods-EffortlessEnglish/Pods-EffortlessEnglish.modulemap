@@ -1,0 +1,6 @@
+framework module Pods_EffortlessEnglish {
+  umbrella header "Pods-EffortlessEnglish-umbrella.h"
+
+  export *
+  module * { export * }
+}

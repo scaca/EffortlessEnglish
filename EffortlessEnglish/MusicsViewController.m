@@ -6,8 +6,8 @@
 //  Copyright © 2016年 Oradt. All rights reserved.
 //
 
-#import "MusicPlayerViewController.h"
 #import "MusicsViewController.h"
+#import "PDFShowViewController.h"
 
 @interface MusicsViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -56,13 +56,10 @@ static NSString *CellIdentifier = @"CellIdentifier";
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    MusicPlayerViewController *musicPlayerVC = [[MusicPlayerViewController alloc] init];
+    PDFShowViewController *musicPlayerVC = [[PDFShowViewController alloc] init];
     musicPlayerVC.musicName = [self.songsArray objectAtIndex:indexPath.row];
-    [self.navigationController presentViewController:musicPlayerVC
-                       animated:YES
-                     completion:^{
 
-                     }];
+    [self.navigationController pushViewController:musicPlayerVC animated:YES];
 }
 
 #pragma mark TableView DataSource
@@ -97,7 +94,7 @@ static NSString *CellIdentifier = @"CellIdentifier";
     });
     [self.view addSubview:tableView];
     [tableView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(self.view);
+      make.edges.equalTo(self.view);
     }];
     self.tableView = tableView;
 }
