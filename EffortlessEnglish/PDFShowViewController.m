@@ -72,14 +72,13 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     [self setupDictionary];
-
-    [self showPDFView];
-
-    [self setupCancelButton];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    [self showPDFView];
+
+    [self setupCancelButton];
 }
 
 - (void)viewDidAppear:(BOOL)animated {

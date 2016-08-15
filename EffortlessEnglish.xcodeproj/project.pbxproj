@@ -151,6 +151,7 @@
 		06A722661D5E0C94001591C6 /* 音乐_播放器_默认唱片头像@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06A7225A1D5E0C94001591C6 /* 音乐_播放器_默认唱片头像@2x.png */; };
 		06A722671D5E0C94001591C6 /* 音乐_播放器_默认模糊背景@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06A7225B1D5E0C94001591C6 /* 音乐_播放器_默认模糊背景@2x.png */; };
 		06A7226A1D5F0E45001591C6 /* PlayerTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A722691D5F0E45001591C6 /* PlayerTabBar.m */; };
+		06A7226D1D60155F001591C6 /* MusicQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A7226C1D60155F001591C6 /* MusicQueue.m */; };
 		64EA937D34C908DAA3D5D46A /* Pods_EffortlessEnglish.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E3D7F992E1062AD8106037 /* Pods_EffortlessEnglish.framework */; };
 /* End PBXBuildFile section */
 
@@ -350,6 +351,8 @@
 		06A7225B1D5E0C94001591C6 /* 音乐_播放器_默认模糊背景@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "音乐_播放器_默认模糊背景@2x.png"; sourceTree = "<group>"; };
 		06A722681D5F0E45001591C6 /* PlayerTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerTabBar.h; sourceTree = "<group>"; };
 		06A722691D5F0E45001591C6 /* PlayerTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerTabBar.m; sourceTree = "<group>"; };
+		06A7226B1D60155F001591C6 /* MusicQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicQueue.h; sourceTree = "<group>"; };
+		06A7226C1D60155F001591C6 /* MusicQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicQueue.m; sourceTree = "<group>"; };
 		55E3D7F992E1062AD8106037 /* Pods_EffortlessEnglish.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EffortlessEnglish.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4EB1C6DA19AD93A828945B0 /* Pods-EffortlessEnglish.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EffortlessEnglish.release.xcconfig"; path = "Pods/Target Support Files/Pods-EffortlessEnglish/Pods-EffortlessEnglish.release.xcconfig"; sourceTree = "<group>"; };
 		C0C4E12E991595325C3C61C2 /* Pods-EffortlessEnglish.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EffortlessEnglish.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EffortlessEnglish/Pods-EffortlessEnglish.debug.xcconfig"; sourceTree = "<group>"; };
@@ -406,6 +409,8 @@
 				06A7224D1D5E0B75001591C6 /* CustomTabBarController.m */,
 				06A722681D5F0E45001591C6 /* PlayerTabBar.h */,
 				06A722691D5F0E45001591C6 /* PlayerTabBar.m */,
+				06A7226B1D60155F001591C6 /* MusicQueue.h */,
+				06A7226C1D60155F001591C6 /* MusicQueue.m */,
 			);
 			path = EffortlessEnglish;
 			sourceTree = "<group>";
@@ -944,6 +949,7 @@
 				0609EDBA1D5C3E8F00D3C671 /* File.m in Sources */,
 				0609EDD81D5C3E8F00D3C671 /* LazyPDFDocumentOutline.m in Sources */,
 				0609EDD51D5C3E8F00D3C671 /* LazyPDFContentView.m in Sources */,
+				06A7226D1D60155F001591C6 /* MusicQueue.m in Sources */,
 				0609EDDA1D5C3E8F00D3C671 /* LazyPDFDrawingView.m in Sources */,
 				0609EDD61D5C3E8F00D3C671 /* LazyPDFDataManager.m in Sources */,
 				0609EE311D5DB43F00D3C671 /* PDFShowViewController.m in Sources */,

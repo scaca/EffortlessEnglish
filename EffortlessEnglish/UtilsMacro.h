@@ -55,10 +55,10 @@
 #pragma mark - 单例
 
 // @interface
-#define Singleton_Interface(className) +(className *)defaultInstance;
+#define kSingleton_Interface(className) +(className *)defaultInstance;
 
 // @implementation
-#define Singleton_Implementation(className)                 \
+#define kSingleton_Implementation(className)                \
     static className *_instance;                            \
     static dispatch_once_t onceToken;                       \
     +(instancetype)allocWithZone : (struct _NSZone *)zone { \

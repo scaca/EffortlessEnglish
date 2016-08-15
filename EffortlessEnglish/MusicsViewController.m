@@ -6,6 +6,7 @@
 //  Copyright © 2016年 Oradt. All rights reserved.
 //
 
+#import "MusicQueue.h"
 #import "MusicsViewController.h"
 #import "PDFShowViewController.h"
 
@@ -13,7 +14,7 @@
 
 @property(nonatomic, strong) UITableView *tableView;
 
-@property(nonatomic, strong) NSMutableArray<NSString *> *songsArray;
+@property(nonatomic, strong) NSArray *songsArray;
 
 @end
 
@@ -26,7 +27,7 @@ static NSString *CellIdentifier = @"CellIdentifier";
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"Effortless English";
-    [self initMusicList];
+    self.songsArray = [[MusicQueue defaultInstance] musicList];
     [self initTableView];
 }
 
@@ -56,10 +57,12 @@ static NSString *CellIdentifier = @"CellIdentifier";
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    PDFShowViewController *musicPlayerVC = [[PDFShowViewController alloc] init];
-    musicPlayerVC.musicName = [self.songsArray objectAtIndex:indexPath.row];
+    PDFShowViewController *pdfShowVC = [[PDFShowViewController alloc] init];
+    pdfShowVC.musicName = [self.songsArray objectAtIndex:indexPath.row];
+    [[MusicQueue defaultInstance] setupCurrentMusic:indexPath.row];
+//    [self.navigationController pushViewController:pdfShowVC animated:YES];
 
-    [self.navigationController pushViewController:musicPlayerVC animated:YES];
+    [self presentViewController:pdfShowVC animated:YES completion:nil];
 }
 
 #pragma mark TableView DataSource
@@ -98,36 +101,4 @@ static NSString *CellIdentifier = @"CellIdentifier";
     }];
     self.tableView = tableView;
 }
-
-- (void)initMusicList {
-    self.songsArray = @[].mutableCopy;
-    NSArray<NSString *> *songNameArray = [[NSBundle mainBundle] pathsForResourcesOfType:@"mp3" inDirectory:nil];
-
-    for (NSString *fullPath in songNameArray) {
-        NSString *mp3FileName = [self resolveNameFromFullPath:fullPath];
-        if (mp3FileName) {
-            NSLog(@"mp3 file name is %@", mp3FileName);
-
-            [self.songsArray addObject:mp3FileName];
-        }
-    }
-}
-
-/*
- Mp3 file full path like below
- "/Users/wangyuehong/Library/Developer/CoreSimulator/Devices/B15E1CA0-EAB2-425D-A64A-16CB18180CD8/data/Containers/Bundle/Application/29AFF741-975A-4661-8FF0-B4FF348AC69A/EffortlessEnglish.app/03-TheWeddingVocabulary.mp3"
- */
-- (NSString *)resolveNameFromFullPath:(NSString *)path {
-    if (!path) {
-        return nil;
-    }
-    NSArray *tempArray = [path componentsSeparatedByString:@"/"];
-    if (tempArray.count <= 0) {
-        return nil;
-    }
-    NSString *mp3Name = [tempArray lastObject];
-    tempArray = [mp3Name componentsSeparatedByString:@"."];
-    return [tempArray firstObject];
-}
-
 @end
